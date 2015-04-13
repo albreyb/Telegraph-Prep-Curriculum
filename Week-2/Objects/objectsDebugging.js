@@ -70,10 +70,10 @@ function signUpNewMember(){
     
     /* 
 	
-    first we need a signUp function that gets the users
+    first we've created a signUp function that gets the users
     information  and stores it in our facebookUser object
 	according to the corresponding key. First and foremost
-	uncomment line 2011 so we can run the function and start fixing
+	uncomment line 212 so we can run the function and start fixing
 	it.
 
     */
@@ -93,7 +93,7 @@ function signUpNewMember(){
 		 */
 		 
 		 //console.log(hintTwo());
-		 	var userInput = prompt("What's your " + facebookUser[key] '?');
+		 	var userInput = prompt("What's your " + facebookUser[key] + '?');
 		 
 		 /* 
 		 reassign the key value to the usersInput we just
@@ -112,7 +112,6 @@ function signUpNewMember(){
 		 //console.log(hintThree())
 
 		 } else {
-		 	
 		 	//console.log(hintOne())
 		 }
 		}
@@ -195,7 +194,9 @@ function signUpNewMember(){
     	*/
 
     	if (useranswer === 'yes') {
-    		// if yes, alert the user that they are signed in by using
+    		/*
+    		if yes, alert the user that they are signed in by using
+    		*/
 
     		// console.log(hintSeven())
 
@@ -249,7 +250,7 @@ signUpNewMember();
 
 
 function hintOne(){
-	return "Put a console.log into your if statement (line 62) to see if it's running. If its not, what's wrong with our if statement?"
+	return "Put a console.log into your if statement (line 89) to see if it's running. If its not, what's wrong with our if statement?"
 }
 
 function hintTwo(){
