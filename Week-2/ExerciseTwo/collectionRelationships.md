@@ -50,3 +50,34 @@ Don't mess with lines 1 through 32. They are used to create Joey's user object (
    
 (iii) If the value of the current element inside if our coworkers array is equal to the current element of our friends array, delete the element in our coworkers array.
 
+YOU ARE NOW ENTERING NIGHTMARE MODE:
+
+7. Now that we have all of our arrays filled, let's sort each array by alphabetical order.
+
+(i) Create a function, nameSort that takes an array and sorts its contents by alphabetical order. **hint: arrays may have a method that does this.
+
+(ii) use nameSort on each array in our ourUser object.
+
+(iii) Check each array by using console.dir to make sure its contents are sorted by the end
+
+
+8. Joey wants to be able to instantly look up whether someone is in one of his networks.
+
+(i) Create a function, networkCheck, that takes an array and a name.
+
+(ii) If the name exists in the array, alert the users full profile formatted exactly like the example below.
+
+```
+nameCheck(friendsArray, 'Solomon Daniels');
+
+'Name: Solomon Daniels
+ Job: Engineer
+ City: Berkeley, California
+ Friends: 0,
+ Family: 0,
+ Coworkers: 0'
+
+```
+ (iii) If the person doesn't exist, set up a prompt that asks for the friends info (name, job, city) and adds it to an object named newUser. (new user should have friends, family, and coworkers arrays inside of it as well)
+
+ (iv) Add newUser to the input array and call nameCheck on the array to make sure it exists.
