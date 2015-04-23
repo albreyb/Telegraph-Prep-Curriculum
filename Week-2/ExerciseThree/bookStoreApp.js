@@ -6,8 +6,8 @@ function dontWorryAboutThis(){
 
 	function createBook(bookName){
 		var price = Math.random() * 20;
-		price = '$' + price.toString().slice(0, 4);
-		var category = (categories[Math.floor(Math.random() * 20)])
+		price = parseFloat(price.toString().slice(0, 4), 10);
+		var category = (categories[Math.floor(Math.random() * 5)])
 	
 		return {
 			title: bookName.split('by')[0].trim(),
@@ -29,6 +29,16 @@ function dontWorryAboutThis(){
 
 }
 
-var TheBookStore = dontWorryAboutThis();
+function testUser(){
+	var balance = Math.random() * 100 + 130;
+		balance = parseFloat(balance.toString().slice(0, 4), 10);
+	return {
+		balance: balance,
+		cart: [],
+	}
+}
 
+var BookStore = dontWorryAboutThis();
+var Susan = testUser();
 
+console.log(Susan);

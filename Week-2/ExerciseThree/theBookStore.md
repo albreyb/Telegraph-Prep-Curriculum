@@ -1,4 +1,4 @@
-online shopping:
+
 USER: 
 - has a balance
 - a cart array
